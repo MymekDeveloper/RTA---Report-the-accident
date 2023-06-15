@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
+  height: 100%;
 }
 canvas {
   padding:0;
@@ -54,20 +55,22 @@ a:link{
 }
 
 h1 {
-  font-size: 40px;
   font-weight: 800 !important;
   color: var(--white-color) !important;
 }
 
 h2 {
-  font-size: 20px;
   font-weight: 700;
   color: var(--microcopy) !important;
 }
 
-h3 {
-  font-size: 16px !important;
+h3, h4 {
   font-weight: 700;
+  color: var(--microcopy) !important;
+}
+
+h5 {
+  font-weight: 500 !important;
   color: var(--microcopy) !important;
 }
 
@@ -82,14 +85,25 @@ h3 {
 }
 
 .blur {
-  width: 100%;
+  width: 95%;
   height: 95vh;
   backdrop-filter: blur(9px);
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
 
-  
+.btn-main {
+  color: white;
+  font-size: 1rem;
+  width: 200px;
+  padding: 8px 80px;
+  background: #E4423D;
+  box-shadow: 0px 4px 16px #8A0E0A;
+  border-radius: 8px;
+}
+
+.row {
 }
 
