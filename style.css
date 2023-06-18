@@ -48,10 +48,7 @@ a:link{
 .container {
   margin: 0;
   display: flex;
-  align-content: center;
-  justify-content: center;
   text-align: center;
-
 }
 
 h1 {
@@ -60,8 +57,8 @@ h1 {
 }
 
 h2 {
-  font-weight: 700;
-  color: var(--microcopy) !important;
+  font-weight: 800;
+  color: var(--white-color) !important;
 }
 
 h3, h4 {
@@ -80,9 +77,38 @@ h5 {
   box-shadow: 0px 4px 8px #FABC62;
 } 
 
+.nav img {
+  margin-left: 100px;
+}
+
 .span {
   padding: 10px 14px;
 }
+
+.circle {
+  height: 15px;
+  width: 15px;
+  background-color: #817F84;
+  border-radius: 50%;
+}
+
+.circle-selected {
+  height: 15px;
+  width: 43px;
+  background-color: #E4423D;
+  border-radius: 30px;
+}
+
+.buttons {
+  max-width: 400px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.pagination {
+  max-width: 100px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
 
 .blur {
   width: 95%;
@@ -102,6 +128,10 @@ h5 {
   background: #E4423D;
   box-shadow: 0px 4px 16px #8A0E0A;
   border-radius: 8px;
+}
+
+.buttons {
+  font-weight: 500;
 }
 
 .row {
