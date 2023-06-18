@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0 auto;
@@ -7,42 +6,43 @@
 }
 
 body {
-  padding:0;
-  margin:0;
-  overflow:hidden;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-content: center;
   height: 100%;
+  background-image: url(images/sunset-bg.png);
 }
 canvas {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 div.btnbg {
-  position:fixed;
-  left:0;
-  top:0;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 #no-gradient {
   background: none;
 }
 
-a{
+a {
   text-decoration: none !important;
-  color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity)) !important;
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity)) !important;
 }
 
-a:link{
+a:link {
   text-decoration: none !important;
-  color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity)) !important;
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity)) !important;
 }
 
 :root {
   --white-color: #fff;
-  --microcopy: #C2D1D6;
-  --third: #6F7597;
+  --microcopy: #c2d1d6;
+  --third: #6f7597;
 }
 
 .container {
@@ -61,7 +61,8 @@ h2 {
   color: var(--white-color) !important;
 }
 
-h3, h4 {
+h3,
+h4 {
   font-weight: 700;
   color: var(--microcopy) !important;
 }
@@ -74,8 +75,8 @@ h5 {
 .img-cover {
   object-fit: fill;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px #FABC62;
-} 
+  box-shadow: 0px 4px 8px #fabc62;
+}
 
 .nav img {
   margin-left: 100px;
@@ -85,17 +86,22 @@ h5 {
   padding: 10px 14px;
 }
 
+.checkbox {
+  max-width: 530px;
+  text-align: left;
+}
+
 .circle {
   height: 15px;
   width: 15px;
-  background-color: #817F84;
+  background-color: #817f84;
   border-radius: 50%;
 }
 
 .circle-selected {
   height: 15px;
   width: 43px;
-  background-color: #E4423D;
+  background-color: #e4423d;
   border-radius: 30px;
 }
 
@@ -107,26 +113,31 @@ h5 {
 .pagination {
   max-width: 100px;
   color: rgba(255, 255, 255, 0.65);
+  gap: 10px;
+  margin-bottom: 40px;
 }
-
 
 .blur {
   width: 95%;
   height: 95vh;
-  backdrop-filter: blur(9px);
+  backdrop-filter: blur(16px);
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .btn-main {
   color: white;
   font-size: 1rem;
   width: 200px;
+  margin-left: 40px;
   padding: 8px 80px;
-  background: #E4423D;
-  box-shadow: 0px 4px 16px #8A0E0A;
+  background: #e4423d;
+  box-shadow: 0px 4px 16px #8a0e0a;
   border-radius: 8px;
 }
 
@@ -136,4 +147,3 @@ h5 {
 
 .row {
 }
-
