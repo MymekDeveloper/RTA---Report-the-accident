@@ -23,11 +23,10 @@
     <title>RTA - Report the accident</title>
   </head>
 
-  <body>
-    <div class="bg"></div>
-    <div class="blur d-flex justify-content-between">
+  <body id="landing-body">
+    <div class="blur-landing d-flex justify-content-between">
       <div class="container">
-        <div class="col">
+        <div class="row">
           <div class="nav">
             <img
               src="images/Logo.svg"
@@ -35,16 +34,56 @@
               style="text-align: left"
             />
           </div>
+          <h6>COMPLETE THE FORM</h6>
+          <h2>Report the accident</h2>
+          <h6>Personal informations</h6>
+          <div class="row mb-4">
+            <div class="col-6">
+              <div class="microcopy">Name</div>
+              <div class="input-group input-half">
+                <input type="text" class="form-control" placeholder="Simon" />
+                <span class="input-group-text" id="basic-addon2">
+                  <i class="fa fa-user"
+                    ><span class="path1"></span><span class="path2"></span
+                  ></i>
+                </span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="microcopy">Last name</div>
+              <div class="input-group input-half">
+                <input type="text" class="form-control" placeholder="Sweed" />
+                <span class="input-group-text" id="basic-addon2">
+                  <i class="fa fa-user"
+                    ><span class="path1"></span><span class="path2"></span
+                  ></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="microcopy">Email address</div>
+              <div class="input-group input-half mb-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="mail@domain.com"
+                />
+                <span class="input-group-text" id="basic-addon2">
+                  <i class="fa fa-user"
+                    ><span class="path1"></span><span class="path2"></span
+                  ></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="">
+              <a href="step1.1.html"><div class="btn-main">Start test</div></a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="buttons d-flex align-items-end mt-5">
-        <h5><a href="#">Previous</a></h5>
-        <div class="btn-main">Next</div>
-      </div>
-      <div class="pagination">
-        <div class="circle-selected mt-5"></div>
-        <div class="circle mt-5"></div>
-        <div class="circle mt-5"></div>
       </div>
     </div>
 
