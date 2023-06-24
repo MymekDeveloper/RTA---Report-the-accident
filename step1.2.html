@@ -22,7 +22,10 @@
     />
     <title>RTA - Report the accident</title>
   </head>
-
+  <!-- <div class="d-flex align-items-start flex-column" style="height: 200px;">
+    <div class="mb-auto p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+  </div> -->
   <body>
     <div class="btnbg">
       <canvas id="sakura"></canvas>
@@ -316,8 +319,8 @@
       </script>
     </div>
     <div class="blur d-flex justify-content-between">
-      <div class="container">
-        <div class="col">
+      <div class="container" style="height: 50px !important">
+        <div class="row">
           <div class="nav">
             <img
               src="images/Logo.svg"
@@ -325,42 +328,85 @@
               style="text-align: left"
             />
           </div>
-
-          <p
-            class="mt-5"
-            style="font-size: 1rem; color: #c2d1d6; font-style: italic"
-          >
-            The form takes an average of
-            <span style="color: #e4423d; font-weight: bold">6 minutes.</span>
-          </p>
-          <div class="checkbox mt-5">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="check1"
-                name="option1"
-                value="something"
-              />
-              <label
-                class="form-check-label"
-                style="color: rgba(255, 255, 255, 0.5); font-size: 0.7rem"
-                >I’m at least 18 years old and agree to the following terms. By
-                tapping Next. I’ve read and agree to the E-sign Disclosure and
-                Consent to receive all communications electronically.</label
-              >
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <div class="d-flex flex-column" style="height: 90vh">
+          <div class="mb-auto p-2 mt-4">
+            <div class="step-name mb-3">Address of Accident</div>
+            <div class="row">
+              <div class="col-12">
+                <div class="microcopy">Place of accident</div>
+                <div class="input-group input-half mb-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="1234 NW Bobcat Lane, MO 65584-5678"
+                  />
+                  <span class="input-group-text" id="basic-addon2">
+                    <i class="fa fa-user"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-8">
+                <div class="microcopy">Date of accident</div>
+                <div class="input-group input-half">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="dd.mm.rrrr"
+                  />
+                  <span class="input-group-text" id="basic-addon2">
+                    <i class="fa fa-user"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                  </span>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="microcopy">Hour</div>
+                <div class="input-group input-half">
+                  <input type="text" class="form-control" placeholder="07:36" />
+                  <span class="input-group-text" id="basic-addon2">
+                    <i class="fa fa-user"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="microcopy">Witnesses</div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="Name, address, phone, underline passengers"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-2">
+            <div class="row">
+              <div class="buttons d-flex align-items-end">
+                <h5><a href="step1.1.html">Previous</a></h5>
+                <div class="btn-main-half">Next</div>
+              </div>
+              <div class="pagination">
+                <div class="circle-ended mt-5"></div>
+                <div class="circle-selected mt-5"></div>
+                <div class="circle mt-5"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="buttons d-flex align-items-end mt-5">
-        <h5><a href="step1.1.html">Previous</a></h5>
-        <div class="btn-main-half">Next</div>
-      </div>
-      <div class="pagination">
-        <div class="circle-ended mt-5"></div>
-        <div class="circle-selected mt-5"></div>
-        <div class="circle mt-5"></div>
       </div>
     </div>
 

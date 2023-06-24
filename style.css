@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -36,6 +36,8 @@ div.btnbg {
   font-size: 1rem;
   font-weight: 700;
   color: #82a0aa;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .step-name {
@@ -63,6 +65,7 @@ div.btnbg {
 
 .form-control::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1; /* Firefox */
 }
@@ -90,9 +93,7 @@ a:link {
 }
 
 .container {
-  margin: 0;
-  display: flex;
-  text-align: center;
+  height: inherit !important;
 }
 
 h1 {
@@ -128,7 +129,8 @@ h6 {
 }
 
 .nav img {
-  margin-left: 100px;
+  margin-top: 1%;
+  margin-left: 10%;
 }
 
 .span {
@@ -164,13 +166,16 @@ h6 {
 .buttons {
   max-width: 400px;
   color: rgba(255, 255, 255, 0.65);
+  display: flex;
+  justify-content: center;
 }
 
 .pagination {
-  max-width: 100px;
   color: rgba(255, 255, 255, 0.65);
   gap: 10px;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .blur {
