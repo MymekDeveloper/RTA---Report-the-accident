@@ -333,76 +333,50 @@
       <div class="container d-flex justify-content-center">
         <div class="d-flex flex-column" style="height: 90vh">
           <div class="mb-auto p-2 mt-5">
-            <div class="step-name mb-3">Address of Accident</div>
+            <div class="step-name mb-3">Informations of Accident</div>
             <div class="row">
               <div class="col-12">
-                <div class="microcopy">Place of accident</div>
-                <div class="input-group input-half mb-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="1234 NW Bobcat Lane, MO 65584-5678"
-                  />
-                  <span class="input-group-text" id="basic-addon2">
-                    <i class="fa fa-user"
-                      ><span class="path1"></span><span class="path2"></span
-                    ></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="col-8">
-                <div class="microcopy">Date of accident</div>
-                <div class="input-group input-half">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="dd.mm.rrrr"
-                  />
-                  <span class="input-group-text" id="basic-addon2">
-                    <i class="fa fa-user"
-                      ><span class="path1"></span><span class="path2"></span
-                    ></i>
-                  </span>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="microcopy">Hour</div>
-                <div class="input-group input-half">
-                  <input type="text" class="form-control" placeholder="07:36" />
-                  <span class="input-group-text" id="basic-addon2">
-                    <i class="fa fa-user"
-                      ><span class="path1"></span><span class="path2"></span
-                    ></i>
-                  </span>
-                </div>
+                <div class="microcopy">Injuries</div>
+                <select class="form-select mb-4" id="select">
+                  <option selected>Select option</option>
+                  <option value="1">No</option>
+                  <option value="2">Yes</option>
+                </select>
               </div>
             </div>
             <div class="row">
               <div class="col-12">
-                <div class="microcopy">Witnesses</div>
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    placeholder="Name, address, phone, underline passengers"
-                  ></textarea>
+                <div class="microcopy">
+                  Property damage other than to the vehicles A and B
                 </div>
+                <select class="form-select mb-4" id="select">
+                  <option selected>Select option</option>
+                  <option value="1">No</option>
+                  <option value="2">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="microcopy">Do police was present?</div>
+                <select class="form-select mb-4" id="select">
+                  <option selected>Select option</option>
+                  <option value="1">No</option>
+                  <option value="2">Yes</option>
+                </select>
               </div>
             </div>
           </div>
           <div class="p-2">
             <div class="row">
               <div class="buttons d-flex align-items-end">
-                <h5><a href="step1.1.html">Previous</a></h5>
-                <a href="step1.3.html"><div class="btn-main-half">Next</div></a>
+                <h5><a href="step1.2.html">Previous</a></h5>
+                <a href="#"><div class="btn-main-half">Next</div></a>
               </div>
               <div class="pagination">
                 <div class="circle-ended mt-5"></div>
+                <div class="circle-ended mt-5"></div>
                 <div class="circle-selected mt-5"></div>
-                <div class="circle mt-5"></div>
               </div>
             </div>
           </div>
