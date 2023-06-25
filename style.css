@@ -108,6 +108,23 @@ a:link {
   max-width: 600px !important;
 }
 
+.img-cover {
+  object-fit: fill;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px #fabc62;
+}
+
+#nav {
+  max-width: none !important;
+  height: 40px !important;
+}
+
+.nav img {
+  margin-top: 1%;
+  padding-top: 1rem;
+  margin-left: 10%;
+}
+
 h1 {
   font-weight: 800 !important;
   color: var(--white-color) !important;
@@ -132,17 +149,6 @@ h5 {
 h6 {
   font-weight: 700 !important;
   color: #6f7597 !important;
-}
-
-.img-cover {
-  object-fit: fill;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px #fabc62;
-}
-
-.nav img {
-  margin-top: 1%;
-  margin-left: 10%;
 }
 
 .span {
@@ -210,6 +216,11 @@ h6 {
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
+}
+
+#completed {
+  text-align: center;
+  max-width: 800px !important;
 }
 
 .blur {
