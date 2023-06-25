@@ -160,9 +160,23 @@ h6 {
   border-radius: 50%;
 }
 
+.circle-big {
+  height: 30px;
+  width: 30px;
+  background-color: #817f84;
+  border-radius: 50%;
+}
+
 .circle-ended {
   height: 15px;
   width: 15px;
+  background-color: #e4423d;
+  border-radius: 50%;
+}
+
+.circle-big-ended {
+  height: 30px;
+  width: 30px;
   background-color: #e4423d;
   border-radius: 50%;
 }
@@ -184,6 +198,14 @@ h6 {
 .pagination {
   color: rgba(255, 255, 255, 0.65);
   gap: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-completed {
+  color: rgba(255, 255, 255, 0.65);
+  gap: 25%;
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
