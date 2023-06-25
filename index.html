@@ -23,20 +23,25 @@
     <title>RTA - Report the accident</title>
   </head>
 
-  <body id="landing-body">
+  <body style="justify-content: left">
     <div class="blur-landing d-flex justify-content-between">
-      <div class="container">
+      <div
+        class="container d-flex justify-content-between flex-column"
+        style="max-width: 420px"
+      >
         <div class="row">
           <div class="nav">
             <img
               src="images/Logo.svg"
               alt="Simon_Sweed"
-              style="text-align: left"
+              style="text-align: left; margin-left: 0px; padding-left: 0.75rem"
             />
           </div>
-          <h6>COMPLETE THE FORM</h6>
-          <h2>Report the accident</h2>
-          <h6>Personal informations</h6>
+        </div>
+        <div class="row">
+          <h6 style="margin-top: 2rem">COMPLETE THE FORM</h6>
+          <h2 style="margin-bottom: 2.5rem">Report the accident</h2>
+          <h6 style="margin-bottom: 1.5rem">Personal informations</h6>
           <div class="row mb-4">
             <div class="col-6">
               <div class="microcopy">Name</div>
@@ -79,10 +84,29 @@
             </div>
           </div>
           <div class="row">
-            <div class="">
-              <a href="step1.1.html"><div class="btn-main">Start test</div></a>
+            <div class="checkbox mt-2 mb-4">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="check1"
+                  name="option1"
+                  value="something"
+                />
+                <label
+                  class="form-check-label"
+                  style="color: rgba(255, 255, 255, 0.5); font-size: 0.7rem"
+                  >I’m at least 18 years old and agree to the following terms.
+                  By tapping Next. I’ve read and agree to the E-sign Disclosure
+                  and Consent to receive all communications
+                  electronically.</label
+                >
+              </div>
             </div>
           </div>
+        </div>
+        <div class="row mb-5">
+          <a href="step1.1.html"><div class="btn-main">Start test</div></a>
         </div>
       </div>
     </div>
