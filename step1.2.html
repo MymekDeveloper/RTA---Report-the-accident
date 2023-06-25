@@ -1,147 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="/images/Favicon.svg" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
-    <title>RTA - Report the accident</title>
-  </head>
-  <!-- <div class="d-flex align-items-start flex-column" style="height: 200px;">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/images/Favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <title>RTA - Report the accident</title>
+</head>
+<!-- <div class="d-flex align-items-start flex-column" style="height: 200px;">
     <div class="mb-auto p-2">Flex item</div>
     <div class="p-2">Flex item</div>
   </div> -->
-  <body>
-    <div class="btnbg">
-      <canvas id="sakura"></canvas>
-      <div class="btnbg"></div>
-    </div>
-    <div class="blur">
-      <div class="container" style="height: 40px !important">
-        <div class="row">
-          <div class="nav">
-            <img
-              src="images/Logo.svg"
-              alt="Simon_Sweed"
-              style="text-align: left"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="container d-flex justify-content-center">
-        <div class="d-flex flex-column" style="height: 90vh">
-          <div class="mb-auto p-2 mt-5">
-            <div class="step-name mb-3">Address of Accident</div>
-            <div class="row">
-              <div class="col-12">
-                <div class="microcopy">Place of accident</div>
-                <div class="input-group input-half mb-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="1234 NW Bobcat Lane, MO 65584-5678"
-                  />
-                  <span class="input-group-text" id="basic-addon2">
-                    <i class="fa fa-user"
-                      ><span class="path1"></span><span class="path2"></span
-                    ></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="col-8">
-                <div class="microcopy">Date of accident</div>
-                <div class="input-group input-half">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="dd.mm.rrrr"
-                  />
-                  <span class="input-group-text" id="basic-addon2">
-                    <i class="fa fa-user"
-                      ><span class="path1"></span><span class="path2"></span
-                    ></i>
-                  </span>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="microcopy">Hour</div>
-                <div class="input-group input-half">
-                  <input type="text" class="form-control" placeholder="07:36" />
-                  <span class="input-group-text" id="basic-addon2">
-                    <i class="fa fa-user"
-                      ><span class="path1"></span><span class="path2"></span
-                    ></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="microcopy">Witnesses</div>
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    placeholder="Name, address, phone, underline passengers"
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-2">
-            <div class="row">
-              <div class="buttons d-flex align-items-end">
-                <a href="step1.1.html"
-                  ><div class="btn-main-half-previous">Previous</div></a
-                >
-                <a href="step1.3.html"
-                  ><div class="btn-main-half-next">Next</div></a
-                >
-              </div>
-              <div class="pagination">
-                <div class="circle-ended mt-5"></div>
-                <div class="circle-selected mt-5"></div>
-                <div class="circle mt-5"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+<body>
+  <div class="btnbg">
+    <canvas id="sakura"></canvas>
+    <div class="btnbg"></div>
+  </div>
+  <div class="blur">
+    <div class="container" style="height: 40px !important">
+      <div class="row">
+        <div class="nav">
+          <img src="images/Logo.svg" alt="Simon_Sweed" style="text-align: left" />
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+      <div class="d-flex flex-column" style="height: 90vh">
+        <div class="mb-auto p-2 mt-5">
+          <div class="step-name mb-3">Address of Accident</div>
+          <div class="row">
+            <div class="col-12">
+              <div class="microcopy">Place of accident</div>
+              <div class="input-group input-half mb-4">
+                <input type="text" class="form-control" placeholder="1234 NW Bobcat Lane, MO 65584-5678" />
+                <span class="input-group-text" id="basic-addon2">
+                  <i class="fa fa-user"><span class="path1"></span><span class="path2"></span></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-8">
+              <div class="microcopy">Date of accident</div>
+              <div class="input-group input-half">
+                <input type="text" class="form-control" placeholder="dd.mm.rrrr" />
+                <span class="input-group-text" id="basic-addon2">
+                  <i class="fa fa-user"><span class="path1"></span><span class="path2"></span></i>
+                </span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="microcopy">Hour</div>
+              <div class="input-group input-half">
+                <input type="text" class="form-control" placeholder="07:36" />
+                <span class="input-group-text" id="basic-addon2">
+                  <i class="fa fa-user"><span class="path1"></span><span class="path2"></span></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="microcopy">Witnesses</div>
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  placeholder="Name, address, phone, underline passengers"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="row">
+            <div class="buttons d-flex align-items-end">
+              <a href="step1.1.html">
+                <div class="btn-main-half-previous">Previous</div>
+              </a>
+              <a href="step1.3.html">
+                <div class="btn-main-half-next">Next</div>
+              </a>
+            </div>
+            <div class="pagination">
+              <div class="circle-ended mt-5"></div>
+              <div class="circle-selected mt-5"></div>
+              <div class="circle mt-5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -105,6 +105,7 @@ a:link {
 
 .container {
   height: inherit !important;
+  max-width: 600px !important;
 }
 
 h1 {
